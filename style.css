@@ -86,7 +86,7 @@ nav a:hover {
   nav {
     display: none;
     position: absolute;     
-    top: 100%;           
+    top: 8%;           
     left: 0;
     width: 100%;
     background: #111;
