@@ -30,10 +30,9 @@ This portfolio is designed to present my professional profile, technical skills,
 ## 📂 Project Structure
 
 portfolio/
-│
-├── index.html
-├── style.css
-├── javascript.js
-├── images/
-│ └── Mypics.jpg
-└── README.md
+index.html
+style.css
+javascript.js
+images/
+└── Mypics.jpg
+README.md
