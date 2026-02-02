@@ -1,29 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <header>
-    <nav class="navbar">
-      <h2 class="logo">MyPortfolio</h2>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opeyemi | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Opeyemi-Opj</h1>
 
-  <main>
-    <section class="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is my homepage showcasing my web development work.</p>
-    </section>
-  </main>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-</body>
+      <nav id="navMenu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+  <h2>Hi, I'm Opeyemi-Opj — A Full-Stack Web Developer</h2>
+  <p>
+    I build clean, responsive, and high-performance web applications using modern technologies.<br>
+    I transform ideas into scalable digital solutions that deliver real business value.
+  </p>
+  <button onclick="scrollToContact()">Get In Touch</button>
+</section>
+
+      <!-- About -->
+      <section id="aboutsct" class="aboutsct">
+        <div class="about-fcolum">
+          <h1>Who I Am</h1>
+          <p>
+            I'm a full-stack developer passionate about building modern, 
+            scalable web and mobile applications that solve real-world problems and deliver meaningful user experiences.
+          </p>
+        </div>
+
+        <div class="about-row">
+          <div class="col-img"></div>
+          <div class="about-col">
+            <h2>About Me</h2>
+            <p>
+             I am a passionate full-stack developer focused on building responsive websites and dynamic web applications.
+             I enjoy solving problems, learning new technologies, and creating clean user experiences.
+            </p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-innerc">
+          <div class="project-card">
+            <h3>Simple Expense Tracker</h3>
+            <p>
+              Tracks expenses, calculates total, and saves data using
+              localStorage.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>Clean portfolio website built with HTML, CSS, and JavaScript.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Blog Website</h3>
+            <p>A responsive blog homepage and post layout with dark mode.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-innerc">
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="contact-left">
+          <h1>I love to hear from you</h1>
+          <p>
+            Feel free to reach out for collaborations, projects, or just a
+            friendly hello.
+          </p>
+        </div>
+
+        <div class="contact-right">
+          <h2>Contact Me</h2>
+
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+
+          <p id="successMessage"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Opeyemi | Full-Stack Developer</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
 </html>
